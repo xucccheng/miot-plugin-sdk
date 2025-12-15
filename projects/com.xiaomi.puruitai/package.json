@@ -1,0 +1,15 @@
+{
+    "name": "com.xiaomi.puruitai",
+    "version": "1.0.68",
+    "scripts": {
+        "start": "node ../../bin/runProject.js"
+    },
+    "dependencies": {
+        "@react-native-picker/picker": "^2.11.0",
+        "react-native-calendars": "^1.126.0",
+        "react-native-chart-kit": "^6.12.0",
+        "react-native-echarts-pro": "^1.9.3",
+        "react-native-picker-select": "^9.3.1",
+        "react-native-webview": "^11.26.1"
+    }
+}

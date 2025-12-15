@@ -40,7 +40,7 @@ export default class MainPage extends React.Component {
   _createMenuData() {
     this._menuData = [
       {
-        'name': '常用功能',
+        'name': '常用功能111',
         'func': () => {
           this.props.navigation.navigate('tutorialDemo', { title: '常用功能' });
         }
@@ -88,7 +88,6 @@ export default class MainPage extends React.Component {
     this._deviceOnlineListener && this._deviceOnlineListener.remove();
     this._packageReceivedInformation && this._packageReceivedInformation.remove();
     this._packageReceivedOutAppInformation && this._packageReceivedOutAppInformation.remove();
-    this._deviceIconChangeListener && this._deviceIconChangeListener.remove();
     this._cloudPrivacyEvent && this._cloudPrivacyEvent.remove();
     this._userExpPlanEvent && this._userExpPlanEvent.remove();
   }
@@ -103,9 +102,6 @@ export default class MainPage extends React.Component {
     });
     this._packageReceivedOutAppInformation = PackageEvent.packageReceivedOutAppInformation.addListener((message) => {
       console.log('收到外部APP传过来的参数', JSON.stringify(message, null, '\t'));
-    });
-    this._deviceIconChangeListener = DeviceEvent.deviceIconChanged.addListener((res) => {
-      console.log('收到图标改变事件数据', res);
     });
     this._cloudPrivacyEvent = PrivacyEvent.cloudPrivacyEvent.addListener((message) => {
       console.log(`收到云端隐私通知数据：${ JSON.stringify(message) }`);

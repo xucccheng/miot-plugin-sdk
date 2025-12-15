@@ -19,12 +19,7 @@ class GearCardDemo extends React.Component {
   render() {
     return (
       <View style={styles.container}>
-        <ScrollView showsVerticalScrollIndicator={false} style={{
-          width: '100%'
-        }} contentContainerStyle={{
-          width: '100%',
-          alignItems: 'center'
-        }}>
+        <ScrollView showsVerticalScrollIndicator={false}>
           <GearCard
             title="最简单tab卡片"
             subtitle="as输输入输输入dqwe"
@@ -136,8 +131,7 @@ class GearCardDemo extends React.Component {
 
 const styles = StyleSheet.create({
   container: {
-    // padding: 10
-    alignItems: 'center'
+    padding: 10
   },
   cardTitleStyle: {
     fontSize: 28,

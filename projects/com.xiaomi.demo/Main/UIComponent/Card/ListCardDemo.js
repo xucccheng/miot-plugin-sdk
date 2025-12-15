@@ -23,12 +23,7 @@ class GearCardDemo extends React.Component {
   render() {
     return (
       <View style={styles.container}>
-        <ScrollView showsVerticalScrollIndicator={false} style={{
-          width: '100%'
-        }} contentContainerStyle={{
-          width: '100%',
-          alignItems: 'center'
-        }}>
+        <ScrollView showsVerticalScrollIndicator={false}>
           <ListCard
             title="最简单tab卡片"
             icon={require('../images/auto-press.jpg')}
@@ -166,7 +161,7 @@ class GearCardDemo extends React.Component {
 
 const styles = StyleSheet.create({
   container: {
-    // padding: 10
+    padding: 10
     // backgroundColor: 'black'
   }
 });

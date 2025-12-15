@@ -1,0 +1,15 @@
+{
+    "name": "project-com-zyl-demo",
+    "version": "1.0.45",
+    "scripts": {
+        "start": "node ../../bin/runProject.js"
+    },
+    "dependencies": {
+        "react-native-loading-spinner-overlay": "^1.0.1",
+        "react-native-root-toast": "^3.0.1",
+        "victory-core": "^30.0.0"
+    },
+    "devDependencies": {
+        "node-sass": "^5.0.0"
+    }
+}

@@ -1,0 +1,10 @@
+{
+    "name": "project-com-xiaomi-xfj",
+    "version": "1.0.68",
+    "scripts": {
+        "start": "node ../../bin/runProject.js"
+    },
+    "dependencies": {
+        "react-native-echarts-pro": "^1.9.3"
+    }
+}
