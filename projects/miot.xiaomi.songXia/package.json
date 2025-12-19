@@ -4,5 +4,8 @@
     "scripts": {
         "start": "node ../../bin/runProject.js"
     },
-    "dependencies": {}
+    "dependencies": {
+        "react-tsparticles": "^2.12.2",
+        "tsparticles": "^3.9.1"
+    }
 }

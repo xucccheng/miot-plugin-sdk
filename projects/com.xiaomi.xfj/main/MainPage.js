@@ -263,10 +263,10 @@ export default class MainPage extends React.Component {
         });
 
         /**
-                                                         * 对设备属性进行订阅
-                                                         * prop.属性名, profile 设备这样进行传参   eg: prop.power
-                                                         * prop.siid.piid， spec协议设备这样进行传参  eg: prop.2.1
-                                                         */
+         * 对设备属性进行订阅
+         * prop.属性名, profile 设备这样进行传参   eg: prop.power
+         * prop.siid.piid， spec协议设备这样进行传参  eg: prop.2.1
+         */
         let subscribeData = [];
         for (let i in this.state.queryData) {
             let item = this.state.queryData[i];
@@ -294,35 +294,9 @@ export default class MainPage extends React.Component {
                         this.parseData(key, i_d);
                     });
                 }
-
-                // let time = that.state.isSendData ? 1000 : 0;
-                // let timer = setTimeout(() => {
-                //     for (let i in that.state.acceptData) {
-                //         let key = i;
-                //         let i_d = that.state.acceptData[key];
-                //         that.parseData(key, i_d);
-                //     }
-                //     that.setState((state) => {
-                //         state.acceptData = {};
-                //         state.isSendData = false;
-                //     });
-                //     // that.forceUpdate();
-
-                // }, time);
-
-                // that.setState((state) => {
-                //     state.parseDataTimer = timer;
-                // });
-
             });
 
         this.getDevicePropsValue();
-
-        // // 监听设备属性发生变化事件； 当设备属性发生改变，会发送事件到js，此处会收到监听回调
-        // this.mDeviceReceivedMessages = DeviceEvent.deviceReceivedMessages.addListener(
-        //     (device, map, data) => {
-        //         console.log('Device.addListener', device, map, data);
-        //     });
     }
 
     removeListener() {

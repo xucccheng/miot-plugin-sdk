@@ -2,6 +2,7 @@ import React from 'react';
 import { Package } from 'miot';
 import { View, Text, TouchableOpacity, StyleSheet } from 'react-native';
 import { Styles as SdkStyles } from "miot/resources";
+import PluginStrings from '../../resources/strings';
 
 /**
  * 自定义智能自动化开发-开发自定义自动化页面
@@ -21,7 +22,7 @@ export default class ScenePage extends React.Component {
           style={styles.btnStyle}
           onPress={() => { this.saveScene(); }}
         >
-          <Text style={{ color: '#333333' }}>点我保存</Text>
+          <Text style={{ color: '#333333' }}>{PluginStrings.saveTip}</Text>
         </TouchableOpacity>
       </View>
     );
