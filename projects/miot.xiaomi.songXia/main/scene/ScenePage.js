@@ -29,10 +29,10 @@ export default class ScenePage extends React.Component {
   }
 
   /**
-   * Package.entryInfo.payload有许多数据，只有name和value可修改，其他的均为readonly。
-   * name：	string	条件/动作 名称
-   * value：	object	可自定义的值，可以是json，string，number。比如：用户自定义的提示文本
-   */
+     * Package.entryInfo.payload有许多数据，只有name和value可修改，其他的均为readonly。
+     * name：	string	条件/动作 名称
+     * value：	object	可自定义的值，可以是json，string，number。比如：用户自定义的提示文本
+     */
   saveScene() {
     Package.entryInfo.payload.value = {
       text: 'xxx',

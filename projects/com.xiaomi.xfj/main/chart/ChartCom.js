@@ -3,7 +3,7 @@ import { StyleSheet, Text, View } from 'react-native';
 import RNEChartsPro from 'react-native-echarts-pro';
 import PluginStrings from '../../resources/strings';
 import { DarkMode } from 'miot';
-import { set } from '../../resources/strings/zh';
+
 
 let isDark = DarkMode.getColorScheme() === 'dark' ? true : false;
 
@@ -76,22 +76,7 @@ const IndoorHumiCom = ({ params, changeDate }) => {
         },
 
         series: [
-            // {
-            //     name: '室内温度',
-            //     type: 'line',
-            //     data: [],
-            //     // smooth: true,
-            //     lineStyle: { color: '#FFD700' },
-            //     itemStyle: { color: '#FFD700' }
-            // },
-            // {
-            //     name: '室外温度',
-            //     type: 'line',
-            //     data: [],
-            //     // smooth: true,
-            //     lineStyle: { color: '#00D7FF' },
-            //     itemStyle: { color: '#00D7FF' }
-            // }
+
         ]
     });
 
@@ -100,7 +85,7 @@ const IndoorHumiCom = ({ params, changeDate }) => {
         clearTimeout(timer);
         setTimer(setTimeout(() => {
             setToolTipFormatter(`{b0}<br />{a0} <span style="margin-left: 20px; color: #1cbcb4">{c0} ${unit}</span><br />{a1} <span style="margin-left: 20px; color: #1cbcb4">{c1} ${unit}</span>`);
-        }, 700));
+        }, 800));
     }, []);
 
     useEffect(() => {
@@ -119,10 +104,9 @@ const IndoorHumiCom = ({ params, changeDate }) => {
     // 监听 x，y的数据
     useEffect(() => {
         clearTimeout(timer);
-        setTimer(setTimeout(() => {
+        setTimeout(() => {
             refreshChart();
-        }, 700));
-
+        }, 0)
     }, [params.xData, params.yData]);
 
     const refreshChart = () => {

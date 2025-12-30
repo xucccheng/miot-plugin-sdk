@@ -1,5 +1,3 @@
-const { jS } = require("./zh");
-
 module.exports = {
   closed: 'Closed',
   aqi: 'AQI',
